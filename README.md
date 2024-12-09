@@ -1,2 +1,2 @@
 # Fastrup.AdventOfCode
-My advent of code solution
+My advent of code solutions
