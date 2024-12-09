@@ -33,8 +33,7 @@ public sealed class Day06_GuardGallivant
     {
         string[] map = await File.ReadAllLinesAsync(FileName);
         HashSet<Point> positions = [];
-        Guard start = new(LocateGuard(map), Direction.North);
-        Guard guard = start;
+        Guard guard = new(LocateGuard(map), Direction.North);
         int answer = 0;
         while (true)
         {
@@ -50,7 +49,7 @@ public sealed class Day06_GuardGallivant
                 if (map[point.Y][point.X].Equals('.') && !positions.Contains(point))
                 {
                     map[point.Y] = map[point.Y][..point.X] + '#' + map[point.Y][(point.X + 1)..];
-                    answer += TestForLoop(map, start);
+                    answer += TestForLoop(map, guard);
                     map[point.Y] = map[point.Y][..point.X] + '.' + map[point.Y][(point.X + 1)..];
                 }
                 guard = guard with { Position = point };
