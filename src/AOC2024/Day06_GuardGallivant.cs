@@ -25,7 +25,7 @@ public sealed class Day06_GuardGallivant
             }
         }
         int answer = positions.Count;
-        answer.Should().Be(5404);
+        answer.Should().Be(5_404);
     }
 
     [Fact]
@@ -55,7 +55,7 @@ public sealed class Day06_GuardGallivant
                 guard = guard with { Position = point };
             }
         }
-        answer.Should().Be(1984);
+        answer.Should().Be(1_984);
     }
 
     private static int TestForLoop(string[] map, Guard guard)

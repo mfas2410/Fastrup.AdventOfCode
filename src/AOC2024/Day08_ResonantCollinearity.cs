@@ -69,7 +69,7 @@ public sealed class Day08_ResonantCollinearity
             }
         }
         int answer = antinodes.Count;
-        answer.Should().Be(1263);
+        answer.Should().Be(1_263);
     }
 
     private static Dictionary<char, List<Point>> GetAntennas(string[] map, int mapWidth, int mapHeight)

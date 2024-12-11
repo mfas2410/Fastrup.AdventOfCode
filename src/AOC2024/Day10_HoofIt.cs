@@ -21,7 +21,7 @@ public sealed class Day10_HoofIt
         LocateStartingPositions(map)
             .Sum(start => TraverseMapAll(map, start))
             .Should()
-            .Be(1925);
+            .Be(1_925);
     }
 
     private static List<Point> LocateStartingPositions(string[] map)

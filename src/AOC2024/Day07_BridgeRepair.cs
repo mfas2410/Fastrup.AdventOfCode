@@ -16,7 +16,7 @@ public sealed class Day07_BridgeRepair
             long[] numbers = parts[1].Split(' ', StringSplitOptions.RemoveEmptyEntries).Select(long.Parse).ToArray();
             if (CanReachTestValue(testValue, numbers, 0, 0, 0)) answer += testValue;
         }
-        answer.Should().Be(4122618559853);
+        answer.Should().Be(4_122_618_559_853);
     }
 
     [Fact]
@@ -31,7 +31,7 @@ public sealed class Day07_BridgeRepair
             long[] numbers = parts[1].Split(' ', StringSplitOptions.RemoveEmptyEntries).Select(long.Parse).ToArray();
             if (CanReachTestValueWithPairing(testValue, numbers, 0, 0, 0)) answer += testValue;
         }
-        answer.Should().Be(227615740238334);
+        answer.Should().Be(227_615_740_238_334);
     }
 
     private static bool CanReachTestValue(long testValue, long[] numbers, int index, long currentSum, int usedNumbers)

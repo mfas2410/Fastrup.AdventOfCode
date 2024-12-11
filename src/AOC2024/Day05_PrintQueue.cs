@@ -20,7 +20,7 @@ public sealed class Day05_PrintQueue
             string[] update = updates[index];
             answer += int.Parse(update[update.Length / 2]);
         }
-        answer.Should().Be(5588);
+        answer.Should().Be(5_588);
     }
 
     [Fact]
@@ -40,7 +40,7 @@ public sealed class Day05_PrintQueue
             Array.Sort(update, (a, b) => rules.TryGetValue(b, out HashSet<string>? rule) && rule.Contains(a) ? -1 : 1);
             answer += int.Parse(update[update.Length / 2]);
         }
-        answer.Should().Be(5331);
+        answer.Should().Be(5_331);
     }
 
     private static async Task<(Dictionary<string, HashSet<string>> rules, List<string[]> updates)> GetData()

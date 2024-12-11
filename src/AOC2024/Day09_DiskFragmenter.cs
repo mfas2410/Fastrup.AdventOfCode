@@ -50,7 +50,7 @@ public sealed class Day09_DiskFragmenter
                 }
             }
         }
-        answer.Should().Be(6262891638328);
+        answer.Should().Be(6_262_891_638_328);
     }
 
     [Fact]
@@ -95,7 +95,7 @@ public sealed class Day09_DiskFragmenter
                 answer += fragment.NewIndex[index]!.Value * fragment.Id!.Value;
             }
         }
-        answer.Should().Be(6287317016845);
+        answer.Should().Be(6_287_317_016_845);
     }
 
     private sealed class Fragment(int? id, int size, int index)

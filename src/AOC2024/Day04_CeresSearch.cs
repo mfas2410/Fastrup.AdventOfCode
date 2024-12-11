@@ -14,7 +14,7 @@ public sealed class Day04_CeresSearch
                      lines.Rotate45Degrees().CountWords(words) +
                      lines90.CountWords(words) +
                      lines90.Rotate45Degrees().CountWords(words);
-        answer.Should().Be(2718);
+        answer.Should().Be(2_718);
     }
 
     [Fact]
@@ -43,6 +43,6 @@ public sealed class Day04_CeresSearch
                 }
             }
         }
-        answer.Should().Be(2046);
+        answer.Should().Be(2_046);
     }
 }

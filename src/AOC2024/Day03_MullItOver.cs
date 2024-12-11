@@ -10,7 +10,7 @@ public sealed class Day03_MullItOver
     public async Task Test1() =>
         MulRegex.Matches(await File.ReadAllTextAsync(FileName))
             .Sum(match => int.Parse(match.Groups[1].Value) * int.Parse(match.Groups[2].Value))
-            .Should().Be(164730528);
+            .Should().Be(164_730_528);
 
     [Fact]
     public async Task Test2()
@@ -28,6 +28,6 @@ public sealed class Day03_MullItOver
                 if (enabled) answer += int.Parse(match.Groups[2].Value) * int.Parse(match.Groups[3].Value);
             }
         }
-        answer.Should().Be(70478672);
+        answer.Should().Be(70_478_672);
     }
 }

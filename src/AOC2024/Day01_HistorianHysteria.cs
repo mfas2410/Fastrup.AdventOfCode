@@ -12,7 +12,7 @@ public sealed class Day01_HistorianHysteria
         Array.Sort(right);
         int answer = 0;
         for (int i = 0; i < left.Length; i++) answer += Math.Abs(left[i] - right[i]);
-        answer.Should().Be(2904518);
+        answer.Should().Be(2_904_518);
     }
 
     [Fact]
@@ -25,7 +25,7 @@ public sealed class Day01_HistorianHysteria
         {
             if (rightCounts.TryGetValue(group.Key, out int count)) answer += group.Count() * group.Key * count;
         }
-        answer.Should().Be(18650129);
+        answer.Should().Be(18_650_129);
     }
 
     private static async ValueTask<(int[] Left, int[] Right)> GetData()
